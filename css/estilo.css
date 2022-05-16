@@ -10,21 +10,28 @@ body{
     color: rgb(218, 218, 205);
     background-color: rgb(27, 26, 27);
 }
+
 /*HEADER */
+
 header{
-    display: flex;  
-    justify-content:space-between; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; 
     align-items: center;  
+    padding-left: 1rem;
+    padding-right: 1rem; 
 }
 
 .header__logo {
-    display: flex; 
-}
+    display: flex;
+} 
 
 .header__navegacion{ 
-    display: flex;
+    display :flex; 
     flex-wrap: wrap;
-    align-content: flex-start;   
+    border-radius: 0.625rem;  
+    box-shadow: 5px 0 10px rgb(218, 218, 205);    
 } 
 
 ul{
@@ -41,98 +48,200 @@ li{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px; 
+    padding: 0.625rem; 
 } 
 
 /* MAIN */
 
-.titulo{                 /* PORTADA */   
+/* titulo */ 
+
+.titulo{                   
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 400;
 }
 
-.main__slider{              /* PORTADA */
+/* imagen portada index */
+
+.img__portada{              
     margin-bottom: 5px;
-    width: 1300px;
-    height: 420px;  
+    border-radius: 5px;
+    width: 98%; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
 }
 
-.ubicacion{ 
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-} 
+/* SECCIONES INDEX */
 
-.iframe__ubicacion{
-    width: 400px;
-    height: 220px;
-} 
+/* IMAGENES SECCIONES INDEX */
 
-.servicio__tecnico{
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    flex-wrap: wrap; 
-} 
-.atencion__alCliente{
-
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
-} 
 .img__index{
-    width: 400px;
-    height: 220px; 
+    width: 25rem;
+    height: 13.75rem; 
 }
+/* SECCIONES CON GRID */
 
-.buttom__index{
-    background-color: rgb(218, 218, 205); 
-    color: rgb(27, 26, 27); 
-    margin-top: 0px;
-    width: 140px;
-    height: 25px;
-    font-weight: bolder;
-    border: 2px;
-}
-/* GRID INDEX */
 .grid__containerIndex{
     display:grid;
     grid-template-areas:"uno dos tres";
-    gap: 15px; 
-    padding: 10px;                   
+    gap: 0.625rem; 
+    padding: 0.625rem;               
+}
+
+.grid__sucursales{
+    grid-area: uno;  
+    background-image: url(../recursos/Sucursales.jpg);
+    width: 25rem;
+    height: 13.75rem; 
+}
+
+.grid__servicioTecnico{
+    grid-area: dos; 
+    background-image: url(../recursos/Servicio\ Tecnico.jpg);
+    width: 25rem;
+    height: 13.75rem; 
+}
+
+.grid__asesoramiento{
+    grid-area: tres;
+    background-image: url(../recursos/atencion-al-cliente.jpg);
+    width: 25rem;
+    height: 13.75rem;
+}
+
+/* BOTONES INDEX */
+
+.buttom__index{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__indexStile{ 
+    background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747)); 
+    margin-top: 0px; 
+    width: 8.125rem;
+    height: 2.5rem;
+    font-weight: bolder;
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: s0.188rem;
+    color:rgb(246, 246, 250); 
 }
 
 /* MAIN PAGINAS DE VENTA  */
+
+/* SECCIONES DE VENTAS CON GRID*/
+
+.grid__container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr; */
+    grid-template-areas: "boxUno boxDos"
+                        "boxTres boxCuatro"
+                        "boxCinco boxSeis";
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 4rem; 
+    grid-column-gap: 0.15rem;
+    padding-bottom: 3rem;
+}
+
+/* IMAGENES DE VENTAS */
+
+.img_box{
+    width: 31.25rem;
+    height: 18.75rem; 
+}
+
+.grid__boxUno{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.grid__boxDos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.grid__boxTres {
+    display: flex;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.grid__boxCuatro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.grid__boxCinco{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.grid__boxSeis{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* BOTONES DE VENTAS  */
+
 .buttom__comprar{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
     border: 2px;
     background-color: rgb(250, 246, 247);
     color: rgba(17, 11, 11, 0.692);
     margin-left: opx;
     margin-top: 0px;
-    width: 125px;
-    height: 25px;
+    width: 7.813rem;
+    height: 1.563rem; 
     font-weight: bolder; 
-    justify-content:center; 
+    transition: all 2s;
 }
 
-/* GRID DE VENTAS */
-.grid__container{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-areas: "boxUno boxDos"
-                        "boxTres boxCuatro"
-                        "boxCinco boxSeis";
-    justify-content: center;
+/* BOTON CON TRANSICION */
+.buttom__comprar:hover{
+    background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747));
+    color:rgb(246, 246, 250);
+    transform: scale(1.5);
 }
 
-.grid__boxUno{
-    background-image:url()
-}
-/* FOOTER */
-
-
+/* MAIN CONTACTOS */
 .buttoms{
     display: flex;
     flex-wrap: wrap;
@@ -144,16 +253,14 @@ li{
     border: 2px;
     font-weight: bolder;
 }
-/* PAGINA CONTACTO */
+
 .consulta__flex{
     display: flex;
     flex-direction: row;
-    /* justify-content: center;
-    align-content: center; */
 }
 
 input{
-    margin: 16px; 
+    margin: 1rem; 
 }
 
 .inputs__contactos{
@@ -161,18 +268,19 @@ input{
 }
 
 textarea{
-    width: 400px;
-    height: 200px;
+    width: 25rem;
+    height: 12.5rem;
 }
 
 
 /* FOOTER */
+
 .footer__informacion{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 30px;
+    padding-top: 2rem;
 } 
 
 .footer__masInformacion{
@@ -195,6 +303,7 @@ textarea{
 
 }
 .footer__dataFiscal{
+    display: flex;
     flex-direction: column;
 }
 
@@ -203,39 +312,72 @@ textarea{
     justify-content: center;
 } 
 
-
 /* MEDIA QUERI TABLET */
-@media (min-width: 541px) and (max-width: 720px){  
-   /* MEDIA QUERI INDEX */
-    .header__logo{
-        width: 8re;
-        height: 8rem;
-    } 
 
-    .grid__containerIndex{
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:"uno"
-                            "dos" 
-                            "tres";
-        gap: 5px;                    
-    }
+@media (min-width:541px) and (max-width: 720px){  
 
-    .main__slider{
-        width: 70vw;
-        height:50rem;  
-    }
+.titulo{               
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 400;
+}
 
-    .img__index{
-        height: 50vh;
-    } 
+.header__logo{
+    display: flex;
+    justify-content:center; 
+    width: 8rem; 
+    height: 8rem;
+    padding-bottom: 1,5rem;
+} 
 
-    .grid__container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "boxUno boxDos"
-                            "boxTres boxCuatro"
-                            "boxCinco boxSeis";
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;   
+    padding-left: 1rem;
+    padding-right: 1rem;  
+}
+
+.header__navegacion{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+} 
+
+.main__slider{              
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 98%; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
+}
+
+.grid__containerIndex{
+    display:grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:"uno"
+                        "dos" 
+                        "tres";
+    gap: 1rem;                    
+}
+
+
+.grid__container{
+    grid-template-columns: 1fr;
+    grid-template-areas: "boxUno"
+                    "boxDos"
+                    "boxTres"
+                    "boxCuatro"
+                    "boxCinco"
+                    "boxSeis";
+    align-items: center;
+    justify-items: center;
+    gap: 4rem;
+    padding-top: 2rem;
 }
 
 .ubicacion{
@@ -249,57 +391,261 @@ textarea{
     padding: 0.5rem;
 }
 
+.grid__boxUno{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem;
+    padding: 1rem;
 }
 
+.grid__boxDos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem;
+    padding: 1rem;
+    padding-top: 1rem;
+}
 
+.grid__boxTres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem;
+    padding: 1rem;
+}
 
+.grid__boxCuatro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem;
+    padding: 1rem;
+}
 
+.grid__boxCinco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem;
+    padding: 1rem;
+}
 
+.grid__boxSeis{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem;
+    padding: 1rem;
+}
 
+.footer__dataFiscal{
+    display: flex;
+    flex-direction: column;
+}
 
+}
 
 /* media queri mobil */
-@media (min-width: 320px) and (max-width: 540px){
+
+@media (max-width: 540px){
     
-    .header__logo{
-        width: 4rem;
-        height: 4rem;
-    }
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.header__logo{
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+}
 
-    li{
-        flex-direction: column;
-    }
+.header__navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    box-shadow: 5px 0 10px rgb(218 218 205);
+    border-radius: 10px;
+    flex-direction: column;
+}
 
-    .grid__containerIndex{
-        display:grid;
+li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* TITULO */   
+.titulo{                 
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 400;
+} 
+
+.grid__containerIndex{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:"uno"
+                        "dos" 
+                        "tres";
+    gap: 1rem;   
+    padding-right: 2rem; 
+    margin-right: 2rem;               
+}
+
+.grid__sucursales{
+    grid-area: uno;  
+    background-image: url(../recursos/Sucursales.jpg);
+    width: 90vw;  
+}
+
+.grid__servicioTecnico{
+    grid-area: dos; 
+    background-image: url(../recursos/Servicio\ Tecnico.jpg);
+    width: 90vw;
+}
+
+.grid__asesoramiento{
+    grid-area: tres;
+    background-image: url(../recursos/atencion-al-cliente.jpg);
+    width: 90vw;
+}
+
+.main__slider{              
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 98%; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
+} 
+
+    .grid__container{
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas:"uno"
-                            "dos" 
-                            "tres";
-        gap: o.5rem;                    
-    }
+        grid-template-areas: "boxUno"
+                            "boxDos"
+                            "boxTres"
+                            "boxCuatro"
+                            "boxCinco"
+                            "boxSeis";
+        gap: 4rem;
+}
 
-    .main__slider{
-        width: 100vw;
-        height:26.5rem;  
-    } 
-    
-        .grid__container{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas: "boxUno"
-                                "boxDos"
-                                "boxTres"
-                                "boxCuatro"
-                                "boxCinco"
-                                "boxSeis";
-    }
-    
-    .ubicacion{
-        padding: 0.5rem;
-    }  
+.img_box{
+    width: 25rem;
+    height: 18.75rem; 
+}
+.grid__boxUno{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 31.25rem;
+    height: 18.75rem;
+}
 
-    .servicio__tecnico{
-        padding: 0.5rem;
-    }
+.grid__boxDos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem; 
+    padding: 1rem;
+}
+
+.grid__boxTres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem; 
+    padding: 1rem;
+}
+
+.grid__boxCuatro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem; 
+    padding: 1rem;
+}
+
+.grid__boxCinco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem; 
+    padding: 1rem;
+}
+
+.grid__boxSeis{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem; */
+    padding: 1rem;
+}
+
+.footer__informacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    align-content: flex-start;
+}
+
+.img__qr{
+    width: 4rem;
+    height: 4rem;  
+}
+
 }
