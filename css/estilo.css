@@ -66,7 +66,8 @@ li{
 .img__portada{              
     margin-bottom: 5px;
     border-radius: 5px;
-    width: 98%; 
+    width: 90%;
+    height: 25rem; 
     padding-left: 1rem; 
     padding-right: 1rem;
 }
@@ -75,18 +76,18 @@ li{
 
 /* IMAGENES SECCIONES INDEX */
 
-.img__index{
+/* .img__index{
     width: 25rem;
     height: 13.75rem; 
-}
+} */
 /* SECCIONES CON GRID */
 
-.grid__containerIndex{
+/* .grid__containerIndex{
     display:grid;
     grid-template-areas:"uno dos tres";
     gap: 0.625rem; 
     padding: 0.625rem;               
-}
+} */
 
 .grid__sucursales{
     grid-area: uno;  
@@ -122,12 +123,13 @@ li{
 .button__indexStile{ 
     background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747)); 
     margin-top: 0px; 
-    width: 8.125rem;
-    height: 2.5rem;
+    width: 9.125rem;
+    height: 3.5rem;
     font-weight: bolder;
     border: 2px solid rgb(15, 15, 15);
-    border-radius: s0.188rem;
+    border-radius: 0.188rem;
     color:rgb(246, 246, 250); 
+    font-size: large;
 }
 
 /* MAIN PAGINAS DE VENTA  */
@@ -223,19 +225,29 @@ li{
     flex-direction: row; 
     align-items: center;
     justify-content: center;
+    
+}
+
+.buttom__estilo{
     border: 2px;
+    display: flex;
     background-color: rgb(250, 246, 247);
     color: rgba(17, 11, 11, 0.692);
     margin-left: opx;
     margin-top: 0px;
     width: 7.813rem;
-    height: 1.563rem; 
-    font-weight: bolder; 
+    height: 1.563rem;
+    font-weight: bolder;
     transition: all 2s;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
 }
 
 /* BOTON CON TRANSICION */
-.buttom__comprar:hover{
+.buttom__estilo:hover{
     background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747));
     color:rgb(246, 246, 250);
     transform: scale(1.5);
@@ -250,8 +262,9 @@ li{
 }
 
 .buttom__contacto{
-    background-color: rgb(250, 246, 247);
-    color: rgba(17, 11, 11, 0.692);
+    background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747));
+    border-radius: 0.188rem;
+    color: rgba(250, 246, 246, 0.692);
     border: 2px;
     font-weight: bolder;
 }
@@ -281,10 +294,6 @@ li{
     flex-wrap: wrap;
     flex-direction: column;
 }
-
-/* .inputs__contactos{
-    display: inline;
-} */
 
 textarea{
     width: 25rem;
@@ -366,10 +375,10 @@ header{
     justify-content:space-around;
 } 
 
-.main__slider{              
+.img__portada{              
     margin-bottom: 5px;
     border-radius: 5px;
-    width: 98%; 
+    width: 90%;
     padding-left: 1rem; 
     padding-right: 1rem;
 }
@@ -573,13 +582,13 @@ li{
     width: 90vw;
 }
 
-.main__slider{              
+.img__portada{              
     margin-bottom: 5px;
     border-radius: 5px;
-    width: 98%; 
+    width: 90%; 
     padding-left: 1rem; 
     padding-right: 1rem;
-} 
+}
 
     .grid__container{
         display: grid;
