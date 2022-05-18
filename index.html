@@ -27,19 +27,47 @@
             </nav>
     </header>
     <main>         
-        <h1 class="titulo">REFRICAR EQUIPAMIENTOS</h1>
-        <img class="img__portada" src="recursos/Foto header.jpg" alt="foto_portada">
+        <section class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src= "recursos/Foto header.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="recursos/Batidora planetaria MP-7-01-834x800.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="recursos/Horno convector mc840.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <!-- seccion index -->
         <section class="container"> 
-            <article class="d-flex flex-row col xl-3 justify-content-between">
-                <div class=" d-flex flex-column align-items-center">
+            <article class="d-flex flex-row flex-wrap justify-content-around">
+                <div class=" d-flex flex-column align-items-center col-xl-3 col-md-9 col-sd-10">
                     <img src="recursos/Sucursales.jpg" alt="Sucursales" class="img-fluid">
                     <button class="button__indexStile">SUCURSALES</button> 
                 </div>
-                <div class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-column align-items-center col-xl-3 col-md-9 col-sd-10">
                     <img src="recursos/Servicio Tecnico.jpg" alt="servicio Tecnico" class="img-fluid">
                     <button class="button__indexStile">SERVICIO TECNICO</button>
                 </div>
-                <div class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-column align-items-center col-xl-3 col-md-9 col-sd-10">
                     <img src="recursos/atencion-al-cliente.jpg" alt="" class="img-fluid">
                     <button class="button__indexStile">ASESORAMIENTO</button>
                 </div>
