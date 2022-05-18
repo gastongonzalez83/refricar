@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+   /*  box-sizing: border-box; */
     margin: 1px;
     padding: 1px;
 }  /* RESET SI O SI*/
@@ -55,60 +55,13 @@ li{
 
 /* titulo */ 
 
+
 .titulo{                   
     text-align: center;
     font-size: 3.125rem;
     font-weight: 400;
 }
 
-/* imagen portada index */
-
-.img__portada{              
-    margin-bottom: 5px;
-    border-radius: 5px;
-    width: 90%;
-    height: 25rem; 
-    padding-left: 1rem; 
-    padding-right: 1rem;
-}
-
-/* SECCIONES INDEX */
-
-/* IMAGENES SECCIONES INDEX */
-
-/* .img__index{
-    width: 25rem;
-    height: 13.75rem; 
-} */
-/* SECCIONES CON GRID */
-
-/* .grid__containerIndex{
-    display:grid;
-    grid-template-areas:"uno dos tres";
-    gap: 0.625rem; 
-    padding: 0.625rem;               
-} */
-
-.grid__sucursales{
-    grid-area: uno;  
-    background-image: url(../recursos/Sucursales.jpg);
-    width: 25rem;
-    height: 13.75rem; 
-}
-
-.grid__servicioTecnico{
-    grid-area: dos; 
-    background-image: url(../recursos/Servicio\ Tecnico.jpg);
-    width: 25rem;
-    height: 13.75rem; 
-}
-
-.grid__asesoramiento{
-    grid-area: tres;
-    background-image: url(../recursos/atencion-al-cliente.jpg);
-    width: 25rem;
-    height: 13.75rem;
-}
 
 /* BOTONES INDEX */
 
@@ -133,90 +86,6 @@ li{
 }
 
 /* MAIN PAGINAS DE VENTA  */
-
-/* SECCIONES DE VENTAS CON GRID*/
-
-.grid__container{
-    display: grid;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr  1fr; */
-    grid-template-areas: "boxUno boxDos"
-                        "boxTres boxCuatro"
-                        "boxCinco boxSeis";
-    align-items: center;
-    justify-items: center;
-    grid-row-gap: 4rem; 
-    grid-column-gap: 0.15rem;
-    padding-bottom: 3rem;
-}
-
-/* IMAGENES DE VENTAS */
-
-.img_box{
-    width: 31.25rem;
-    height: 18.75rem; 
-}
-
-.grid__boxUno{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.grid__boxDos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.grid__boxTres {
-    display: flex;
-    
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.grid__boxCuatro{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.grid__boxCinco{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.grid__boxSeis{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 1rem;
-}
 
 /* BOTONES DE VENTAS  */
 
@@ -255,7 +124,6 @@ li{
 
 /* MAIN CONTACTOS */
 
-
 .buttoms{
     display: flex;
     flex-wrap: wrap;
@@ -265,7 +133,7 @@ li{
     background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747));
     border-radius: 0.188rem;
     color: rgba(250, 246, 246, 0.692);
-    border: 2px;
+    border: 0.125;
     font-weight: bolder;
 }
 
@@ -284,8 +152,8 @@ li{
     align-content: center;
     justify-content: center;
     width: 70%;
-    border: 5px solid white;
-    padding: 10px;
+    border: 0.313rem solid white;
+    padding: 0.625rem;
 }
 
 
@@ -312,10 +180,12 @@ textarea{
 } 
 
 .footer__masInformacion{
+    display: flex;
     flex-direction: column;  
 }
 
 .footer__contactanos{
+    display: flex;
     flex-direction: column;
 }
 
@@ -696,10 +566,20 @@ li{
     padding-top: 2rem;
     align-content: flex-start;
 }
+
+.footer__dataFiscal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+}
+
 .input__formularios{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-content: space-around;
 }
 
 textarea{
