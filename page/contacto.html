@@ -28,7 +28,44 @@
     </header>
     <main>
         <h1 class="titulo">CONTACTANOS</h1>
-            <section class="contenedor">
+        <div class="row justify-content-evenly">
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="aombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido" >
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="localidad" class="form-label">Localidad</label>
+                <input type="text" class="form-control" id="localidad" placeholder="Localidad">
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="provincia" class="form-label">Provincia</label>
+                <input type="text" class="form-control" id="provincia" placeholder="Provincia">
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="nombre@email.com" >
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="phone" class="form-label">Telefono</label>
+                <input type="phone" class="form-control" id="phone" placeholder="Telefono" >
+            </div>
+            <div class="col-xl-8 col-md-10 col-sd-8">
+                <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aqui su consulta"></textarea>
+            </div>
+            <div class="d-flex gap-2 justify-content-center">
+                <input class="btn btn-primary btn-sd" type="submit" value="Enviar Consulta">
+                <input class="btn btn-primary btn-sd" type="button" value="Adjuntar Factura">
+                <input class="btn btn-primary btn-sd" type="reset" value="Limpiar Consulta">
+                <input class="form-control-col-0.5" type="file" id="formFile">
+            </div>
+        </div>
+        
+        <!--     <section class="contenedor">
                 <form  class="formulario" method="">
                     <div class="input__formularios">
                         <label for="nombre">Nombre</label>
@@ -65,7 +102,7 @@
                         <input type="checkbox" name="acepta" value="1">
                     </div>
                 </form>
-            </section>  
+            </section>  --> 
     </main>
     <footer>
         <div class="footer__informacion" >
