@@ -28,44 +28,42 @@
     </header>
     <main>
         <h1 class="titulo">CONTACTANOS</h1>
-            <section class="contenedor">
-                <form  class="formulario" method="">
-                    <div class="input__formularios">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Nombre">
-                        <label class for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="Apellido">
-                    </div>
-                    <div class="input__formularios">
-                        <label class for="localidad">Localidad</label>
-                        <input type="text" id="Localidad" placeholder="Localidad">
-                        <label class for="provincia">Provincia</label>
-                        <input type="text" id="provincia" placeholder="Provincia">
-                    </div>
-                    <div class="input__formularios">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="direccion@email.com">
-                        <select name="sexo" id="sexo">
-                            <option value="femenino">Femenino</option>
-                            <option value="masculino">Masculino</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="consulta"> Consulta</label>
-                    </div>
-                        <textarea placeholder="Escriba aqui su consulta...."></textarea>
-                    <div class="input__formularios">
-                        <input class="buttom__contacto" type="button" value="Adjuntar Factura"/>
-                        <input class="buttom__contacto" type="submit" value="Enviar Consulta"/>
-                        <input class="buttom__contacto" type="reset" value="Limpiar Consulta"/>
-                    </div>
-                    <p> Recibir Avisos De Ofertas y Promociones</p>
-                    <div>
-                        <label for="acepto"> Acepto</label>
-                        <input type="checkbox" name="acepta" value="1">
-                    </div>
-                </form>
-            </section>  
+        <div class="row justify-content-evenly">
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="aombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido" >
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="localidad" class="form-label">Localidad</label>
+                <input type="text" class="form-control" id="localidad" placeholder="Localidad">
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="provincia" class="form-label">Provincia</label>
+                <input type="text" class="form-control" id="provincia" placeholder="Provincia">
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="nombre@email.com" >
+            </div>
+            <div class="col-xl-5 col-md-5 col-sd-8">
+                <label for="phone" class="form-label">Telefono</label>
+                <input type="phone" class="form-control" id="phone" placeholder="Telefono" >
+            </div>
+            <div class="col-xl-8 col-md-10 col-sd-8">
+                <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aqui su consulta"></textarea>
+            </div>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <input class="btn btn-primary btn-sd" type="submit" value="Enviar Consulta">
+                <input class="btn btn-primary btn-sd" type="button" value="Adjuntar Factura">
+                <input class="btn btn-primary btn-sd" type="reset" value="Limpiar Consulta">
+                <input class="form-control-col-0.5" type="file" id="formFile">
+            </div>
+        </div>  
     </main>
     <footer>
         <div class="footer__informacion" >
