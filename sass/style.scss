@@ -1,0 +1,356 @@
+@import"variables";
+@import "header";
+@import "footer";
+
+*{
+/*  box-sizing: border-box; */
+    margin: 1px;
+    padding: 1px;
+}  /* RESET SI O SI*/
+
+body{
+    font-family: $font-principal;
+    font-size:20px;
+    color: rgb(218, 218, 205);
+    background-color: $color-principal;
+}
+
+/*HEADER */
+
+/* MAIN */
+
+/* titulo */ 
+
+
+.titulo{                   
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 400;
+}
+
+
+/* BOTONES INDEX */
+
+    .button__indexStile{ 
+        background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747)); 
+        margin-top: 0px; 
+        width: 9.125rem;
+        height: 2.5rem;
+        font-weight: bolder;
+        border: 2px solid rgb(15, 15, 15);
+        border-radius: 0.188rem;
+        color:$color-boton-index;
+        font-size: large;
+    }
+
+/* MAIN PAGINAS DE VENTA  */
+
+/* BOTONES DE VENTAS  */
+
+.buttom__comprar{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+
+    &__estilo{
+    border: 2px;
+    display: flex;
+    background-color: rgb(250, 246, 247);
+    color: rgba(17, 11, 11, 0.692);
+    margin-left: opx;
+    margin-top: 0px;
+    width: 7.813rem;
+    height: 1.563rem;
+    font-weight: bolder;
+    transition: all 2s;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
+    &:hover{     /* BOTON CON TRANSICION */
+        background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747));
+        color:rgb(246, 246, 250);
+        transform: scale(1.5);
+    }
+}
+    
+
+}
+
+/* FOOTER */
+
+.footer__informacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2rem;
+    &__masInformacion{
+        display: flex;
+        flex-direction: column;  
+    }
+    &__contactanos{
+        display: flex;
+        flex-direction: column;
+    }
+    &__redes{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        &__img{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__dataFiscal{
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+
+.footer__disclaimer{
+    display: flex;
+    justify-content: center;
+} 
+
+/* MEDIA QUERI TABLET */
+
+@media (min-width:541px) and (max-width: 720px){  
+
+.titulo{               
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 400;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;   
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &__logo{
+        display: flex;
+        justify-content:center; 
+        width: 8rem; 
+        height: 8rem;
+        padding-bottom: 1,5rem;
+    }
+    &__navegacion{ 
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-around;
+    }    
+}
+
+.grid__containerIndex{
+    display:grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:"uno"
+                        "dos" 
+                        "tres";
+    gap: 1rem;                    
+}
+
+
+.grid__container{
+    grid-template-columns: 1fr;
+    grid-template-areas: "boxUno"
+                    "boxDos"
+                    "boxTres"
+                    "boxCuatro"
+                    "boxCinco"
+                    "boxSeis";
+    align-items: center;
+    justify-items: center;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+
+.footer__dataFiscal{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+/* media queri mobil */
+
+@media (max-width: 540px){
+    
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    &__logo{
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+    }
+    &__navegacion {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        box-shadow: 5px 0 10px rgba(245, 245, 242, 0.788);
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+}
+
+
+li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* TITULO */   
+.titulo{                 
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 400;
+} 
+
+    .grid__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "boxUno"
+                            "boxDos"
+                            "boxTres"
+                            "boxCuatro"
+                            "boxCinco"
+                            "boxSeis";
+        gap: 4rem;
+}
+
+.img_box{
+    width: 25rem;
+    height: 18.75rem; 
+}
+
+.grid__boxUno{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 31.25rem;
+    height: 18.75rem;
+}
+
+.grid__boxDos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem; 
+    padding: 1rem;
+}
+
+.grid__boxTres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem; 
+    padding: 1rem;
+}
+
+.grid__boxCuatro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem; 
+    padding: 1rem;
+}
+
+.grid__boxCinco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem; 
+    padding: 1rem;
+}
+
+.grid__boxSeis{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 18.75rem;
+    padding: 1rem;
+}
+/* pagina de contacto */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.footer__informacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    align-content: flex-start;
+}
+
+.footer__dataFiscal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.input__formularios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+textarea{
+    width: 90vw;
+}
+.img__qr{
+    width: 4rem;
+    height: 4rem;  
+}
+
+}
