@@ -9,89 +9,13 @@ header {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem; }
-  header__logo {
-    display: flex; }
-  header__navegacion {
-    display: flex;
-    flex-wrap: wrap;
+  header .navbar-light {
     border-radius: 0.625rem;
-    box-shadow: 5px 0 10px #dadacd; }
-  header ul {
-    display: flex;
-    list-style: none; }
-  header li {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0.625rem; }
-  header a {
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-    color: #ddd3d3; }
+    box-shadow: 5px 0 10px #dadacd;
+    color: #f6f6fa; }
+  header .navbar-light .navbar-nav .nav-link {
+    color: #dadacd; }
 
-* {
-  /*  box-sizing: border-box; */
-  margin: 1px;
-  padding: 1px; }
-
-/* RESET SI O SI*/
-body {
-  font-family: "Akshar", sans-serif;
-  font-size: 20px;
-  color: #dadacd;
-  background-color: #1b1a1b; }
-
-/*HEADER */
-/* MAIN */
-/* titulo */
-.titulo {
-  text-align: center;
-  font-size: 3.125rem;
-  font-weight: 400; }
-
-/* BOTONES INDEX */
-.button__indexStile {
-  background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
-  margin-top: 0px;
-  width: 9.125rem;
-  height: 2.5rem;
-  font-weight: bolder;
-  border: 2px solid #0f0f0f;
-  border-radius: 0.188rem;
-  color: #f6f6fa;
-  font-size: large; }
-
-/* MAIN PAGINAS DE VENTA  */
-/* BOTONES DE VENTAS  */
-.buttom__comprar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-  .buttom__comprar__estilo {
-    border: 2px;
-    display: flex;
-    background-color: #faf6f7;
-    color: rgba(17, 11, 11, 0.692);
-    margin-left: opx;
-    margin-top: 0px;
-    width: 7.813rem;
-    height: 1.563rem;
-    font-weight: bolder;
-    transition: all 2s;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-around;
-    justify-content: center; }
-    .buttom__comprar__estilo:hover {
-      /* BOTON CON TRANSICION */
-      background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
-      color: #f6f6fa;
-      transform: scale(1.5); }
-
-/* FOOTER */
 .footer__informacion {
   display: flex;
   flex-direction: row;
@@ -119,172 +43,125 @@ body {
   display: flex;
   justify-content: center; }
 
-/* MEDIA QUERI TABLET */
-@media (min-width: 541px) and (max-width: 720px) {
-  .titulo {
-    text-align: center;
-    font-size: 3.125rem;
-    font-weight: 400; }
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    header__logo {
-      display: flex;
-      justify-content: center;
-      width: 8rem;
-      height: 8rem;
-      padding-bottom: 1,5rem; }
-    header__navegacion {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-around; }
-  .grid__containerIndex {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-areas: "uno" "dos"  "tres";
-    gap: 1rem; }
-  .grid__container {
-    grid-template-columns: 1fr;
-    grid-template-areas: "boxUno" "boxDos" "boxTres" "boxCuatro" "boxCinco" "boxSeis";
-    align-items: center;
-    justify-items: center;
-    gap: 4rem;
-    padding-top: 2rem; }
-  .footer__dataFiscal {
-    display: flex;
-    flex-direction: column; } }
+* {
+  margin: 1px;
+  padding: 1px; }
 
-/* media queri mobil */
-@media (max-width: 540px) {
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column; }
-    header__logo {
-      display: flex;
-      width: 4rem;
-      height: 4rem; }
-    header__navegacion {
-      display: flex;
-      flex-wrap: wrap;
-      align-content: flex-start;
-      box-shadow: 5px 0 10px rgba(245, 245, 242, 0.788);
-      border-radius: 10px;
-      flex-direction: column; }
-  li {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px; }
-  /* TITULO */
-  .titulo {
+/* RESET SI O SI*/
+body {
+  font-family: "Akshar", sans-serif;
+  font-size: 20px;
+  color: #dadacd;
+  background-color: #1b1a1b;
+  /* MAIN */
+  /* titulo */
+  /* BOTONES INDEX */
+  /* MAIN PAGINAS DE VENTA  */
+  /* BOTONES DE VENTAS  */
+  /* media queri mobil */ }
+  body .titulo {
     text-align: center;
     font-size: 3.125rem;
     font-weight: 400; }
-  .grid__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "boxUno" "boxDos" "boxTres" "boxCuatro" "boxCinco" "boxSeis";
-    gap: 4rem; }
-  .img_box {
-    width: 25rem;
-    height: 18.75rem; }
-  .grid__boxUno {
+  body .button__indexStile {
+    background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
+    margin-top: 0px;
+    width: 9.125rem;
+    height: 2.5rem;
+    font-weight: bolder;
+    border: 2px solid #0f0f0f;
+    border-radius: 0.188rem;
+    color: #f6f6fa;
+    font-size: large; }
+  body .buttom__comprar {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
     align-items: center;
-    padding: 1rem;
-    width: 31.25rem;
-    height: 18.75rem; }
-  .grid__boxDos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 31.25rem;
-    height: 18.75rem;
-    padding: 1rem; }
-  .grid__boxTres {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 31.25rem;
-    height: 18.75rem;
-    padding: 1rem; }
-  .grid__boxCuatro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 31.25rem;
-    height: 18.75rem;
-    padding: 1rem; }
-  .grid__boxCinco {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 31.25rem;
-    height: 18.75rem;
-    padding: 1rem; }
-  .grid__boxSeis {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 31.25rem;
-    height: 18.75rem;
-    padding: 1rem; }
-  /* pagina de contacto */
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    width: 90%;
-    padding: 10px; }
-  .footer__informacion {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 2rem;
-    align-content: flex-start; }
-  .footer__dataFiscal {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: center; }
-  .input__formularios {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around; }
-  textarea {
-    width: 90vw; }
-  .img__qr {
-    width: 4rem;
-    height: 4rem; } }
+    justify-content: center; }
+    body .buttom__comprar__comprar__estilo {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: space-around;
+      justify-content: center;
+      border: 2px;
+      display: flex;
+      background-color: #faf6f7;
+      color: rgba(17, 11, 11, 0.692);
+      margin-left: opx;
+      margin-top: 0px;
+      width: 7.813rem;
+      height: 1.563rem;
+      font-weight: bolder;
+      transition: all 2s; }
+      body .buttom__comprar__comprar__estilo:hover {
+        /* BOTON CON TRANSICION */
+        background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
+        color: #f6f6fa;
+        transform: scale(1.5); }
+  @media (min-width: 541px) and (max-width: 720px) {
+    body .titulo {
+      text-align: center;
+      font-size: 3.125rem;
+      font-weight: 400; }
+    body .grid__containerIndex {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr;
+      grid-template-areas: "uno" "dos"  "tres";
+      gap: 1rem; }
+    body .footer__dataFiscal {
+      display: flex;
+      flex-direction: column; } }
+  @media (max-width: 540px) {
+    body {
+      /* TITULO */
+      /* pagina de contacto */ }
+      body header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column; }
+        body header__logo {
+          display: flex;
+          width: 4rem;
+          height: 4rem; }
+        body header__navegacion {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          box-shadow: 5px 0 10px rgba(245, 245, 242, 0.788);
+          border-radius: 10px;
+          flex-direction: column; }
+      body .titulo {
+        text-align: center;
+        font-size: 3.125rem;
+        font-weight: 400; }
+      body .grid__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "boxUno" "boxDos" "boxTres" "boxCuatro" "boxCinco" "boxSeis";
+        gap: 4rem; }
+      body .footer__informacion {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        align-content: flex-start; }
+      body .footer__dataFiscal {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: center; }
+      body .input__formularios {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around; }
+      body textarea {
+        width: 90vw; }
+      body .img__qr {
+        width: 4rem;
+        height: 4rem; } }

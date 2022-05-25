@@ -1,0 +1,36 @@
+.footer__informacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2rem;
+
+    &__masInformacion{
+        display: flex;
+        flex-direction: column;  
+    }
+    &__contactanos{
+        display: flex;
+        flex-direction: column;
+    }
+    &__redes{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        &__img{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__dataFiscal{
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+.footer__disclaimer{
+    display: flex;
+    justify-content: center;
+} 
+
+
