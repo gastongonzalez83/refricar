@@ -21,6 +21,15 @@ body{
     font-weight: 400;
 }
 
+.carousel-inner{
+    width: 98%;
+    img {
+
+        max-height: 28.125rem;
+        
+        }
+}
+
 /* BOTONES INDEX */
 
     .button__indexStile{ 
@@ -72,26 +81,11 @@ body{
 
 @media (min-width:541px) and (max-width: 720px){  
 
-.titulo{               
-    text-align: center;
-    font-size: 3.125rem;
-    font-weight: 400;
-}
 
-.grid__containerIndex{
-    display:grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-areas:"uno"
-                        "dos" 
-                        "tres";
-    gap: 1rem;                    
-}
-
-.footer__dataFiscal{
-    display: flex;
-    flex-direction: column;
-}
+    .footer__dataFiscal{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
@@ -99,49 +93,6 @@ body{
 
 @media (max-width: 540px){
     
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    &__logo{
-        display: flex;
-        width: 4rem;
-        height: 4rem;
-    }
-    &__navegacion {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        box-shadow: 5px 0 10px rgba(245, 245, 242, 0.788);
-        border-radius: 10px;
-        flex-direction: column;
-    }
-}
-
-/* TITULO */   
-.titulo{                 
-    text-align: center;
-    font-size: 3.125rem;
-    font-weight: 400;
-} 
-
-    .grid__container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "boxUno"
-                            "boxDos"
-                            "boxTres"
-                            "boxCuatro"
-                            "boxCinco"
-                            "boxSeis";
-        gap: 4rem;
-}
-
-/* pagina de contacto */
-
-
 .footer__informacion{
     display: flex;
     flex-direction: column;
@@ -158,16 +109,6 @@ header {
     align-items: center;
 }
 
-.input__formularios{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
-}
-
-textarea{
-    width: 90vw;
-}
 .img__qr{
     width: 4rem;
     height: 4rem;  

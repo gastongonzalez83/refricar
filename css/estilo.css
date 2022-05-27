@@ -63,6 +63,10 @@ body {
     text-align: center;
     font-size: 3.125rem;
     font-weight: 400; }
+  body .carousel-inner {
+    width: 98%; }
+    body .carousel-inner img {
+      max-height: 28.125rem; }
   body .button__indexStile {
     background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
     margin-top: 0px;
@@ -100,68 +104,22 @@ body {
         color: #f6f6fa;
         transform: scale(1.5); }
   @media (min-width: 541px) and (max-width: 720px) {
-    body .titulo {
-      text-align: center;
-      font-size: 3.125rem;
-      font-weight: 400; }
-    body .grid__containerIndex {
-      display: grid;
-      justify-items: center;
-      grid-template-columns: 1fr;
-      grid-template-areas: "uno" "dos"  "tres";
-      gap: 1rem; }
     body .footer__dataFiscal {
       display: flex;
       flex-direction: column; } }
   @media (max-width: 540px) {
-    body {
-      /* TITULO */
-      /* pagina de contacto */ }
-      body header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column; }
-        body header__logo {
-          display: flex;
-          width: 4rem;
-          height: 4rem; }
-        body header__navegacion {
-          display: flex;
-          flex-wrap: wrap;
-          align-content: flex-start;
-          box-shadow: 5px 0 10px rgba(245, 245, 242, 0.788);
-          border-radius: 10px;
-          flex-direction: column; }
-      body .titulo {
-        text-align: center;
-        font-size: 3.125rem;
-        font-weight: 400; }
-      body .grid__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "boxUno" "boxDos" "boxTres" "boxCuatro" "boxCinco" "boxSeis";
-        gap: 4rem; }
-      body .footer__informacion {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-top: 2rem;
-        align-content: flex-start; }
-      body .footer__dataFiscal {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        align-items: center; }
-      body .input__formularios {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: space-around; }
-      body textarea {
-        width: 90vw; }
-      body .img__qr {
-        width: 4rem;
-        height: 4rem; } }
+    body .footer__informacion {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+      align-content: flex-start; }
+    body .footer__dataFiscal {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      align-items: center; }
+    body .img__qr {
+      width: 4rem;
+      height: 4rem; } }
