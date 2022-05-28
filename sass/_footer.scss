@@ -2,35 +2,29 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 2rem;
 
-    &__masInformacion{
-        display: flex;
-        flex-direction: column;  
-    }
-    &__contactanos{
-        display: flex;
-        flex-direction: column;
-    }
-    &__redes{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        &__img{
-            display: flex;
-            flex-direction: row;
+    @media (max-width: 540px){
+            flex-direction: column;
+            align-content: flex-start;
         }
-    }
+
     &__dataFiscal{
-        display: flex;
         flex-direction: column;
-    }
-} 
+            
+            &__dataFiscal__img__qr{
+
+                @media (max-width: 540px){
+                    width: 4rem;
+                    height: 4rem;  
+                }
+            }
+
+    } 
+}
 
 .footer__disclaimer{
     display: flex;
     justify-content: center;
-} 
-
-
+}

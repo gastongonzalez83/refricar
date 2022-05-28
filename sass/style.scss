@@ -9,19 +9,29 @@
 
 body{
     font-family: $font-principal;
-    font-size:20px;
+    font-size:1.25rem;
     color:$color-fuente; 
     background-color: $color-principal;
-    /* MAIN */
+        /* MAIN */
 
-/* titulo */ 
-.titulo{                   
-    text-align: center;
-    font-size: 3.125rem;
-    font-weight: 400;
-}
+    /* titulo */ 
+    .titulo{                   
+        text-align: center;
+        font-size: 3.125rem;
+        font-weight: 400;
+        padding-top: 0.313rem;
+    }
 
-/* BOTONES INDEX */
+    .carousel-inner{
+        width: 98%;
+        img {
+
+            max-height: 28.125rem;
+            
+            }
+    }
+
+    /* BOTONES INDEX */
 
     .button__indexStile{ 
         background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747)); 
@@ -35,144 +45,38 @@ body{
         font-size: large;
     }
 
-/* MAIN PAGINAS DE VENTA  */
+    /* MAIN PAGINAS DE VENTA  */
 
-/* BOTONES DE VENTAS  */
+    /* BOTONES DE VENTAS  */
 
-.buttom__comprar{
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    justify-content: center;
-
-    &__comprar__estilo{
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-around;
-    justify-content: center;
-    border: 2px;
-    display: flex;
-    background-color: rgb(250, 246, 247);
-    color: $color-boton-compras;
-    margin-left: opx;
-    margin-top: 0px;
-    width: 7.813rem;
-    height: 1.563rem;
-    font-weight: bolder;
-    transition: all 2s;
-    
-    &:hover{     /* BOTON CON TRANSICION */
-        background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747));
-        color:$color-transicion-compras;
-        transform: scale(1.5);
-    }
-}
-}
-
-@media (min-width:541px) and (max-width: 720px){  
-
-.titulo{               
-    text-align: center;
-    font-size: 3.125rem;
-    font-weight: 400;
-}
-
-.grid__containerIndex{
-    display:grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-areas:"uno"
-                        "dos" 
-                        "tres";
-    gap: 1rem;                    
-}
-
-.footer__dataFiscal{
-    display: flex;
-    flex-direction: column;
-}
-
-}
-
-/* media queri mobil */
-
-@media (max-width: 540px){
-    
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    &__logo{
+    .buttom__comprar{
         display: flex;
-        width: 4rem;
-        height: 4rem;
-    }
-    &__navegacion {
-        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+
+        &__comprar__estilo{
+        flex-direction: row;
         flex-wrap: wrap;
-        align-content: flex-start;
-        box-shadow: 5px 0 10px rgba(245, 245, 242, 0.788);
-        border-radius: 10px;
-        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        justify-content: center;
+        border: 2px;
+        display: flex;
+        background-color: rgb(250, 246, 247);
+        color: $color-boton-compras;
+        margin-left: opx;
+        margin-top: 0px;
+        width: 7.813rem;
+        height: 1.563rem;
+        font-weight: bolder;
+        transition: all 2s;
+        
+        &:hover{     /* BOTON CON TRANSICION */
+            background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747));
+            color:$color-transicion-compras;
+            transform: scale(1.5);
+        }
+        }
     }
 }
-
-/* TITULO */   
-.titulo{                 
-    text-align: center;
-    font-size: 3.125rem;
-    font-weight: 400;
-} 
-
-    .grid__container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "boxUno"
-                            "boxDos"
-                            "boxTres"
-                            "boxCuatro"
-                            "boxCinco"
-                            "boxSeis";
-        gap: 4rem;
-}
-
-/* pagina de contacto */
-
-
-.footer__informacion{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 2rem;
-    align-content: flex-start;
-}
-
-.footer__dataFiscal{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: center;
-}
-
-.input__formularios{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
-}
-
-textarea{
-    width: 90vw;
-}
-.img__qr{
-    width: 4rem;
-    height: 4rem;  
-}
-
-}
-}
-

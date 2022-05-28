@@ -15,4 +15,7 @@ header{
     .navbar-light .navbar-nav .nav-link{
         color: $color-fuente;
     }
+    .navbar-toggler-icon{
+        background-color: $color-fuente;
+    }
 }

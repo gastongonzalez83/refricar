@@ -14,30 +14,26 @@ header {
     box-shadow: 5px 0 10px #dadacd;
     color: #f6f6fa; }
   header .navbar-light .navbar-nav .nav-link {
-    color: #dadacd; }
+    color: #fbfbf3; }
+  header .navbar-toggler-icon {
+    background-color: #fbfbf3; }
 
 .footer__informacion {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 2rem; }
-  .footer__informacion__masInformacion {
-    display: flex;
-    flex-direction: column; }
-  .footer__informacion__contactanos {
-    display: flex;
-    flex-direction: column; }
-  .footer__informacion__redes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; }
-    .footer__informacion__redes__img {
-      display: flex;
-      flex-direction: row; }
+  @media (max-width: 540px) {
+    .footer__informacion {
+      flex-direction: column;
+      align-content: flex-start; } }
   .footer__informacion__dataFiscal {
-    display: flex;
     flex-direction: column; }
+    @media (max-width: 540px) {
+      .footer__informacion__dataFiscal__dataFiscal__img__qr {
+        width: 4rem;
+        height: 4rem; } }
 
 .footer__disclaimer {
   display: flex;
@@ -50,19 +46,23 @@ header {
 /* RESET SI O SI*/
 body {
   font-family: "Akshar", sans-serif;
-  font-size: 20px;
-  color: #dadacd;
+  font-size: 1.25rem;
+  color: #fbfbf3;
   background-color: #1b1a1b;
   /* MAIN */
   /* titulo */
   /* BOTONES INDEX */
   /* MAIN PAGINAS DE VENTA  */
-  /* BOTONES DE VENTAS  */
-  /* media queri mobil */ }
+  /* BOTONES DE VENTAS  */ }
   body .titulo {
     text-align: center;
     font-size: 3.125rem;
-    font-weight: 400; }
+    font-weight: 400;
+    padding-top: 0.313rem; }
+  body .carousel-inner {
+    width: 98%; }
+    body .carousel-inner img {
+      max-height: 28.125rem; }
   body .button__indexStile {
     background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
     margin-top: 0px;
@@ -99,69 +99,3 @@ body {
         background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
         color: #f6f6fa;
         transform: scale(1.5); }
-  @media (min-width: 541px) and (max-width: 720px) {
-    body .titulo {
-      text-align: center;
-      font-size: 3.125rem;
-      font-weight: 400; }
-    body .grid__containerIndex {
-      display: grid;
-      justify-items: center;
-      grid-template-columns: 1fr;
-      grid-template-areas: "uno" "dos"  "tres";
-      gap: 1rem; }
-    body .footer__dataFiscal {
-      display: flex;
-      flex-direction: column; } }
-  @media (max-width: 540px) {
-    body {
-      /* TITULO */
-      /* pagina de contacto */ }
-      body header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column; }
-        body header__logo {
-          display: flex;
-          width: 4rem;
-          height: 4rem; }
-        body header__navegacion {
-          display: flex;
-          flex-wrap: wrap;
-          align-content: flex-start;
-          box-shadow: 5px 0 10px rgba(245, 245, 242, 0.788);
-          border-radius: 10px;
-          flex-direction: column; }
-      body .titulo {
-        text-align: center;
-        font-size: 3.125rem;
-        font-weight: 400; }
-      body .grid__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "boxUno" "boxDos" "boxTres" "boxCuatro" "boxCinco" "boxSeis";
-        gap: 4rem; }
-      body .footer__informacion {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-top: 2rem;
-        align-content: flex-start; }
-      body .footer__dataFiscal {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        align-items: center; }
-      body .input__formularios {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: space-around; }
-      body textarea {
-        width: 90vw; }
-      body .img__qr {
-        width: 4rem;
-        height: 4rem; } }
