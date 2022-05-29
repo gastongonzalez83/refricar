@@ -1,6 +1,152 @@
 /* COLORES */
 /* FUENTES */
 /* MEDIDAS */
+/* MAP */
+/* EACH */
+.key1-box {
+  background-image: url(../recursos/cocinasIndustriales.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key2-box {
+  background-image: url(../recursos/campanas.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key3-box {
+  background-image: url(../recursos/licuadoras.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key4-box {
+  background-image: url(../recursos/sartenes.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key5-box {
+  background-image: url(../recursos/cacerolas.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key6-box {
+  background-image: url(../recursos/cafeteras.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key7-box {
+  background-image: url(../recursos/cocinasIndustriales.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key8-box {
+  background-image: url(../recursos/hornosPizzeros.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key9-box {
+  background-image: url(../recursos/freidoras.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key10-box {
+  background-image: url(../recursos/asadorCriollo.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key11-box {
+  background-image: url(../recursos/carlitero.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key12-box {
+  background-image: url(../recursos/spiedo.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key13-box {
+  background-image: url(../recursos/Balanzas.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key14-box {
+  background-image: url(../recursos/cortadoraDeFiambre.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key15-box {
+  background-image: url(../recursos/Freezers.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key16-box {
+  background-image: url(../recursos/Gaveteros.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key17-box {
+  background-image: url(../recursos/Selladoras.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
+.key18-box {
+  background-image: url(../recursos/Sierras.jpg);
+  background-size: cover;
+  width: 28.125rem;
+  height: 15.625rem;
+  border-radius: 1rem;
+  box-shadow: 5px 0 10px #dadacd; }
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -11,8 +157,7 @@ header {
   padding-right: 1rem; }
   header .navbar-light {
     border-radius: 0.625rem;
-    box-shadow: 5px 0 10px #dadacd;
-    color: #f6f6fa; }
+    box-shadow: 5px 0 10px #dadacd; }
   header .navbar-light .navbar-nav .nav-link {
     color: #fbfbf3; }
   header .navbar-toggler-icon {
@@ -39,6 +184,46 @@ header {
   display: flex;
   justify-content: center; }
 
+/* BOTONES INDEX */
+.button__indexStile {
+  background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
+  margin-top: 0px;
+  width: 9.125rem;
+  height: 2.5rem;
+  font-weight: bolder;
+  border: 2px solid #0f0f0f;
+  border-radius: 0.188rem;
+  color: #f6f6fa;
+  font-size: large; }
+
+/* BOTONES DE VENTAS  */
+.buttom__comprar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .buttom__comprar__comprar__estilo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
+    border: 2px;
+    display: flex;
+    background-color: #faf6f7;
+    color: rgba(17, 11, 11, 0.692);
+    margin-left: opx;
+    margin-top: 0px;
+    width: 7.813rem;
+    height: 1.563rem;
+    font-weight: bolder;
+    transition: all 2s; }
+    .buttom__comprar__comprar__estilo:hover {
+      /* BOTON CON TRANSICION */
+      background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
+      color: #f6f6fa;
+      transform: scale(1.5); }
+
 * {
   margin: 1px;
   padding: 1px; }
@@ -50,10 +235,7 @@ body {
   color: #fbfbf3;
   background-color: #1b1a1b;
   /* MAIN */
-  /* titulo */
-  /* BOTONES INDEX */
-  /* MAIN PAGINAS DE VENTA  */
-  /* BOTONES DE VENTAS  */ }
+  /* titulo */ }
   body .titulo {
     text-align: center;
     font-size: 3.125rem;
@@ -62,40 +244,7 @@ body {
   body .carousel-inner {
     width: 98%; }
     body .carousel-inner img {
-      max-height: 28.125rem; }
-  body .button__indexStile {
-    background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
-    margin-top: 0px;
-    width: 9.125rem;
-    height: 2.5rem;
-    font-weight: bolder;
-    border: 2px solid #0f0f0f;
-    border-radius: 0.188rem;
-    color: #f6f6fa;
-    font-size: large; }
-  body .buttom__comprar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-    body .buttom__comprar__comprar__estilo {
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      align-content: space-around;
-      justify-content: center;
-      border: 2px;
-      display: flex;
-      background-color: #faf6f7;
-      color: rgba(17, 11, 11, 0.692);
-      margin-left: opx;
-      margin-top: 0px;
-      width: 7.813rem;
-      height: 1.563rem;
-      font-weight: bolder;
-      transition: all 2s; }
-      body .buttom__comprar__comprar__estilo:hover {
-        /* BOTON CON TRANSICION */
-        background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
-        color: #f6f6fa;
-        transform: scale(1.5); }
+      max-height: 28.125rem;
+      border-radius: 1rem; }
+  body .img__index {
+    border-radius: 1rem; }

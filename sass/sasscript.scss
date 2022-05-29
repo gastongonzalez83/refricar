@@ -1,0 +1,16 @@
+/* MAP */
+$lineaHogar:(key1: cocinasIndustriales, key2:campanas, key3:licuadoras, key4:sartenes, key5:cacerolas, key6:cafeteras, 
+                key7:cocinasIndustriales, key8:hornosPizzeros, key9:freidoras, key10:asadorCriollo, key11:carlitero, key12:spiedo,
+                key13:Balanzas, key14:cortadoraDeFiambre, key15:Freezers, key16:Gaveteros, key17:Selladoras, key18:Sierras);
+
+/* EACH */
+@each $key, $producto in $lineaHogar {
+    .#{$key}-box{
+        background-image: url(../recursos/#{$producto}.jpg);
+        background-size: cover;
+        width: 28.125rem;
+        height:15.625rem;
+        border-radius: 1rem;
+        box-shadow: 5px 0 10px rgb(218, 218, 205); 
+    }
+}

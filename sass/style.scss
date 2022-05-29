@@ -1,6 +1,8 @@
 @import"variables";
+@import"sasscript";
 @import "header";
 @import "footer";
+@import "botones";
 
 *{
     margin: 1px;
@@ -25,58 +27,12 @@ body{
     .carousel-inner{
         width: 98%;
         img {
-
             max-height: 28.125rem;
-            
+            border-radius: 1rem;
             }
     }
 
-    /* BOTONES INDEX */
-
-    .button__indexStile{ 
-        background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747)); 
-        margin-top: 0px; 
-        width: 9.125rem;
-        height: 2.5rem;
-        font-weight: bolder;
-        border: 2px solid rgb(15, 15, 15);
-        border-radius: 0.188rem;
-        color:$color-boton-index;
-        font-size: large;
-    }
-
-    /* MAIN PAGINAS DE VENTA  */
-
-    /* BOTONES DE VENTAS  */
-
-    .buttom__comprar{
-        display: flex;
-        flex-direction: row; 
-        align-items: center;
-        justify-content: center;
-
-        &__comprar__estilo{
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: space-around;
-        justify-content: center;
-        border: 2px;
-        display: flex;
-        background-color: rgb(250, 246, 247);
-        color: $color-boton-compras;
-        margin-left: opx;
-        margin-top: 0px;
-        width: 7.813rem;
-        height: 1.563rem;
-        font-weight: bolder;
-        transition: all 2s;
-        
-        &:hover{     /* BOTON CON TRANSICION */
-            background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747));
-            color:$color-transicion-compras;
-            transform: scale(1.5);
-        }
-        }
+    .img__index{
+        border-radius: 1rem;
     }
 }

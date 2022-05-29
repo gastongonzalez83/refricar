@@ -10,11 +10,12 @@ header{
     .navbar-light {
         border-radius: 0.625rem;  
         box-shadow: 5px 0 10px rgb(218, 218, 205);   
-        color: rgb(246, 246, 250);
     }
+
     .navbar-light .navbar-nav .nav-link{
         color: $color-fuente;
     }
+
     .navbar-toggler-icon{
         background-color: $color-fuente;
     }
