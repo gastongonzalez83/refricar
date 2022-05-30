@@ -192,7 +192,7 @@ header {
   height: 2.5rem;
   font-weight: bolder;
   border: 2px solid #0f0f0f;
-  border-radius: 0.188rem;
+  border-radius: 0.25rem;
   color: #f6f6fa;
   font-size: large; }
 
@@ -200,20 +200,12 @@ header {
 .buttom__comprar {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center; }
   .buttom__comprar__comprar__estilo {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-around;
-    justify-content: center;
     border: 2px;
-    display: flex;
     background-color: #faf6f7;
     color: rgba(17, 11, 11, 0.692);
-    margin-left: opx;
-    margin-top: 0px;
+    border-radius: 0.25rem;
     width: 7.813rem;
     height: 1.563rem;
     font-weight: bolder;
