@@ -100,7 +100,7 @@
   box-shadow: 5px 0 10px #dadacd; }
 
 .key13-box {
-  background-image: url(../recursos/Balanzas.jpg);
+  background-image: url(../recursos/balanzas.jpg);
   background-size: cover;
   width: 28.125rem;
   height: 15.625rem;
@@ -116,7 +116,7 @@
   box-shadow: 5px 0 10px #dadacd; }
 
 .key15-box {
-  background-image: url(../recursos/Freezers.jpg);
+  background-image: url(../recursos/freezers.jpg);
   background-size: cover;
   width: 28.125rem;
   height: 15.625rem;
@@ -124,7 +124,7 @@
   box-shadow: 5px 0 10px #dadacd; }
 
 .key16-box {
-  background-image: url(../recursos/Gaveteros.jpg);
+  background-image: url(../recursos/gaveteros.jpg);
   background-size: cover;
   width: 28.125rem;
   height: 15.625rem;
@@ -132,7 +132,7 @@
   box-shadow: 5px 0 10px #dadacd; }
 
 .key17-box {
-  background-image: url(../recursos/Selladoras.jpg);
+  background-image: url(../recursos/selladoras.jpg);
   background-size: cover;
   width: 28.125rem;
   height: 15.625rem;
@@ -140,7 +140,7 @@
   box-shadow: 5px 0 10px #dadacd; }
 
 .key18-box {
-  background-image: url(../recursos/Sierras.jpg);
+  background-image: url(../recursos/sierras.jpg);
   background-size: cover;
   width: 28.125rem;
   height: 15.625rem;
@@ -174,9 +174,11 @@ header {
       flex-direction: column;
       align-content: flex-start; } }
   .footer__informacion__dataFiscal {
+    display: flex;
     flex-direction: column; }
     @media (max-width: 540px) {
-      .footer__informacion__dataFiscal__dataFiscal__img__qr {
+      .footer__informacion__dataFiscal {
+        flex-direction: row;
         width: 4rem;
         height: 4rem; } }
 
@@ -184,35 +186,22 @@ header {
   display: flex;
   justify-content: center; }
 
-/* BOTONES INDEX */
-.button__indexStile {
-  background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
-  margin-top: 0px;
-  width: 9.125rem;
-  height: 2.5rem;
-  font-weight: bolder;
-  border: 2px solid #0f0f0f;
-  border-radius: 0.25rem;
-  color: #f6f6fa;
-  font-size: large; }
-
-/* BOTONES DE VENTAS  */
-.buttom__comprar {
+.buttom {
   display: flex;
   flex-direction: row;
   justify-content: center; }
-  .buttom__comprar__comprar__estilo {
+  .buttom__estilo {
     border: 2px;
-    background-color: #faf6f7;
-    color: rgba(17, 11, 11, 0.692);
+    background-color: #1b1be4;
+    color: #fcfafa;
     border-radius: 0.25rem;
-    width: 7.813rem;
-    height: 1.563rem;
+    width: 9.125rem;
+    height: 2.5rem;
     font-weight: bolder;
     transition: all 2s; }
-    .buttom__comprar__comprar__estilo:hover {
+    .buttom__estilo:hover {
       /* BOTON CON TRANSICION */
-      background-image: linear-gradient(to top, #2424d3, rgba(211, 42, 42, 0.747));
+      background-image: linear-gradient(to top, #2424d3, white);
       color: #f6f6fa;
       transform: scale(1.5); }
 

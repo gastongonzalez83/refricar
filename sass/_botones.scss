@@ -1,37 +1,21 @@
 
-    /* BOTONES INDEX */
-
-    .button__indexStile{ 
-        background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747)); 
-        margin-top: 0px; 
-        width: 9.125rem;
-        height: 2.5rem;
-        font-weight: bolder;
-        border: 2px solid rgb(15, 15, 15);
-        border-radius: 0.25rem;
-        color:$color-boton-index;
-        font-size: large;
-    }
-
-    /* BOTONES DE VENTAS  */
-
-    .buttom__comprar{
+    .buttom{
         display: flex;
         flex-direction: row;
         justify-content: center;
 
-        &__comprar__estilo{
+        &__estilo{
         border: 2px;
-        background-color: rgb(250, 246, 247);
+        background-color: rgb(27, 27, 228);
         color: $color-boton-compras;
         border-radius: 0.25rem;
-        width: 7.813rem;
-        height: 1.563rem;
+        width: 9.125rem;
+        height: 2.5rem;
         font-weight: bolder;
         transition: all 2s;
         
         &:hover{     /* BOTON CON TRANSICION */
-            background-image: linear-gradient(to top, rgb(36, 36, 211),rgba(211, 42, 42, 0.747));
+            background-image: linear-gradient(to top, rgb(36, 36, 211),rgb(255, 255, 255));
             color:$color-transicion-compras;
             transform: scale(1.5);
         }

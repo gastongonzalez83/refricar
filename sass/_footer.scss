@@ -11,18 +11,17 @@
         }
 
     &__dataFiscal{
+        display: flex;
         flex-direction: column;
-            
-            &__dataFiscal__img__qr{
 
                 @media (max-width: 540px){
+                    flex-direction: row;
                     width: 4rem;
                     height: 4rem;  
                 }
             }
 
-    } 
-}
+} 
 
 .footer__disclaimer{
     display: flex;
