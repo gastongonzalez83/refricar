@@ -1,7 +1,7 @@
 /* MAP */
-$productos:(key1: cocinasIndustriales, key2:campanas, key3:licuadoras, key4:sartenes, key5:cacerolas, key6:cafeteras, 
-                key7:cocinasIndustriales, key8:hornosPizzeros, key9:freidoras, key10:asadorCriollo, key11:carlitero, key12:spiedo,
-                key13:balanzas, key14:cortadoraDeFiambre, key15:freezers, key16:gaveteros, key17:selladoras, key18:sierras);
+$productos:(key1: CocinasIndustriales, key2:campanas, key3:Licuadoras, key4:sartenes, key5:Cacerolas, key6:cafeteras, 
+                key7:CocinasIndustriales, key8:hornosPizzeros, key9:Freidoras, key10:asadorCriollo, key11:carlitero, key12:spiedo,
+                key13:Balanzas, key14:cortadoraDeFiambre, key15:Freezers, key16:Gaveteros, key17:Selladoras, key18:Sierras);
 
 /* EACH */
 @each $key, $producto in $productos {
